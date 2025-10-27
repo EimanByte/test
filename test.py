@@ -1,6 +1,7 @@
 import os
 import time
 import random
+#TESTING THIS SUPPOSE TO BE IN A NEW (NOT MAIN) BRANCH
 
 # Clear the screen (works on Windows, Mac, Linux)
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -10,12 +11,12 @@ answer = input("🤔 Quick question... what's 1 + 1? ")
 
 # Wait dramatically
 print("\nCalculating your genius response...")
-time.sleep(1.5)
+time.sleep(1)
 
 # Clear again for effect
-os.system('cls' if os.name == 'nt' else 'clear')
+# os.system('cls' if os.name == 'nt' else 'clear')
 
-# List of witty compliments
+# List of compliments
 messages = [
     "🎉 Good job, Einstein! Even if it’s wrong, your enthusiasm is unmatched!",
     "👏 Well done! I can feel your brain overheating from that effort!",
@@ -24,7 +25,7 @@ messages = [
     "🧠 Outstanding! You’ve successfully participated in the world’s easiest quiz!"
 ]
 
-# Print a colorful “Good Job” banner
+# Print a “Good Job” banner
 print("\033[92m")  # set text color to green
 print("╔═══════════════════════════════╗")
 print("║         🌟 GOOD JOB! 🌟        ║")
@@ -35,5 +36,5 @@ print("\033[0m")  # reset color
 print(random.choice(messages))
 print("\n")
 
-time.sleep(3)
+time.sleep(2)
 input("Press Enter to exit 😁 ")
